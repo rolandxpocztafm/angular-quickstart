@@ -1,23 +1,16 @@
 backend:
-  name: github
-  repo: rolandxpocztafm/efoilbrabant.nl
-  branch: main
-  auth_type: oauth
-  app_id: Ov23liyDC5BclXppnSBs
-  auth_endpoint: https://github.com/login/oauth/authorize
-  login_style: popup
+  name: git-gateway
+  branch: main # or your default branch name
 
-
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "static/img"
+public_folder: "/img"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "_posts"
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "content/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
