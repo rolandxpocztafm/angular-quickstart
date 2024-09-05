@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: rolandxpocztafm/efoilbrabant.nl
+  repo: rolandxpocztafm/angular-quickstart/efoilbrabant.nl
   branch: main
   auth_type: oauth
   app_id: Ov23liyDC5BclXppnSBs
